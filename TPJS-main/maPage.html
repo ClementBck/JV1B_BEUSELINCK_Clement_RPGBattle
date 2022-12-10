@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LE JEU DE FOU</title>
+        <meta charset="utf-8" />
+        <link href="styles.css" media="all" rel="stylesheet" type="text/css" />
+        <script src="monScript.js" async></script>
+    </head>
+    <body>
+        <div id="scene">
+            <div id="tete">
+                <div id="infos_ennemis">
+                    HP : <progress id="hp_ennemis" value="100" max="100" min="0"></progress> 
+                </div>
+            </div>
+            <div id="texte_combat">
+                
+            </div>
+            <div id = heros>
+                <div id="personnage_A" class="joueur">
+                    <img id="aled" src="img/Heros/aled  1.png">
+                </div>
+                <div id="menu">
+                    <input id="bouton_attaque" class="bouton" type="button" value="Attaque">
+                    <input id="bouton_attaque_spe" class="bouton" type="button" value="Attaque Speciale">
+                    <input id="bouton_defense" class="bouton" type="button" value="Defendre">
+                    <input id="bouton_fermer" class="bouton" type="button" value="Fermer">
+                </div>
+                <div class="barre_vie">
+                    PV : <progress id="viePersoA" class="vie" value="100" max="100" min="0"></progress>
+                </div>
+                <div class="barre_mana">
+                    PM : <progress id="manaPersoA" class="mana" value="100" max="100" min="0"></progress>
+                </div>
+                <div id="personnage_B" class="joueur">
+                    <img src="img/Heros/aled  2.png">
+                </div>
+                <div class="barre_vie">
+                    PV : <progress id="viePersoB" class="vie" value="100" max="100" min="0"></progress>
+                </div>
+                <div class="barre_mana">
+                    PM : <progress id="manaPersoB"class="mana" value="100" max="100" min="0"></progress>
+                </div>
+                <div id="personnage_C" class="joueur">
+                    <img src="img/Heros/aled  3.png">
+                </div>
+                <div class="barre_vie">
+                    PV : <progress id="viePersoC" class="vie" value="100" max="100" min="0"></progress>
+                </div>
+                <div class="barre_mana">
+                    PM : <progress id="manaPersoC" class="mana" value="100" max="100" min="0"></progress>
+                </div>
+                <div id="personnage_D" class="joueur">
+                    <img src="img/Heros/aled  4.png">
+                </div>
+                <div class="barre_vie">
+                    PV :  <progress id="viePersoD" class="vie" value="100" max="100" min="0"></progress>
+                </div>
+                <div class="barre_mana">
+                    PM : <progress id="manaPersoD"class="mana" value="100" max="100" min="0"></progress>
+                </div>
+            </div>
+            <div id = "monstres">
+                <div id="monstre_A" class="ennemi">
+                    <img src="img/Ennemis/monstre.png">
+                </div>
+                <div id="monstre_B" class="ennemi">
+                    <img src="img/Ennemis/monstre.png">
+                </div>
+                <div id="monstre_C" class="ennemi">
+                    <img src="img/Ennemis/monstre.png">
+                </div>
+            </div>
+        </div>  
+    </body>
+</html>

@@ -1,0 +1,166 @@
+/*La scène désigne "l'écran" du jeu, c'est sur la scene que les animations, personnages et autres seront affichés */
+#scene {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/71c8d4c1-f1a9-47f1-855c-030b165278fa/dektl6b-3b40000d-d04a-4d92-b767-17b70b19fb22.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzcxYzhkNGMxLWYxYTktNDdmMS04NTVjLTAzMGIxNjUyNzhmYVwvZGVrdGw2Yi0zYjQwMDAwZC1kMDRhLTRkOTItYjc2Ny0xN2I3MGIxOWZiMjIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.sk9f7WGbHKRhgtFKSY4dVx73H2s9WkXdPzWAdEXgGzI");
+    background-size: contain;
+    width: 100%;
+    height: 1000px;
+    border-style: outset;
+    border-color: rgb(141, 17, 17);
+    text-align: center;
+    border-width: 10px;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+/*Le menu est la div contenant les boutons et autres éléments hors de l'écran de jeu*/
+#menu{
+    display: none;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+/* Le Body de base pour le fonds du site*/
+body{
+    background-color: rgb(71, 58, 58);
+}
+
+.bouton:hover{
+    background-color:rgb(155, 44, 44)
+}
+
+.bouton{
+    width: 200px;
+    height: 50px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 5px;
+    background-color: rgb(87, 30, 30);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+#tete {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-content: center;
+    background-color: rgb(112, 44, 44);
+    width: auto;
+    height: 7%;
+    border: 0;
+    border-style: groove;
+    border-color: rgb(141, 17, 17);
+    text-align: center;
+    font-size: 3rem;
+    border-width: 5px;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+/*Place Holder pour determiner le positionement des personnages*/
+
+.joueur{
+    width: 200px;
+    height: 150px;
+    display: flex;
+}
+
+.joueur:hover{
+    border-width: 8px;
+    background-color:rgba(155, 44, 44, 0.9);
+    border-color:rgb(141, 17, 17);
+}
+
+#heros{
+    padding-left: 1%;
+    padding-top: 10px;
+    height: 150px;
+    width: 100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#monstres{
+    padding-left: 90%;
+    padding-top: 10%;
+    height: 150px;
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.ennemi{
+    width: 200px;
+    height: 150px;
+    border-style: groove;
+    border-width: 4px;
+    display: flex;
+}
+
+.ennemi:hover{
+    border-width: 8px;
+    background-color:rgba(155, 44, 44, 0.9);
+    border-color:rgb(141, 17, 17);
+}
+
+.barre_vie{
+    border-style:groove;
+    border-color: goldenrod;
+    background: rgb(0, 156, 34);
+    border-width: 4px;
+    padding-top: 1%;
+    width:max-content ;
+}
+
+.barre_mana{
+    border-style:groove;
+    border-color: goldenrod;
+    border-width: 4px;
+    background: rgb(2, 183, 255);
+    padding-top: 1%;
+    width:max-content ;
+}
+
+#hp_ennemis{
+    border-width: 4px;
+    border-style: groove;
+    border-color: red;
+}
+
+.vie{
+    border-width: 2px;
+    background: bisque;
+}
+
+#infos_ennemis{
+    display: none;
+}
+
+.mana{
+    background: rgb(2, 179, 202);
+}
+
+h4{
+    position: absolute;
+}
+
+#texte_combat{
+    border-width: 2px;
+    border-style: groove;
+    border-color: goldenrod;
+    background-color: blanchedalmond;
+    display: none;
+    justify-content: center;
+    font-size: 2rem;
+}
